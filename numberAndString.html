@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Number and String</h2>
+
+<p>JavaScript will NOT convert strings to numbers when adding:</p>
+
+<p id="result1"></p>
+
+<p>However, JavaScript will convert strings to numbers when subtracting, multiplying or dividing.</p>
+
+<p>Here's an example:</p>
+
+<p id="result2"></p>
+
+<script>
+let x = "100";
+let y = "10";
+let z = x + y;   
+document.getElementById("result1").innerHTML += "100 + 10 = " + z;
+
+let x2 = "100";
+let y2 = "10";
+// You can try to change the subtraction sign for a multiplication or division sign:
+let z2 = x2 - y2;   
+document.getElementById("result2").innerHTML += "100 - 10 = " + z2;
+</script>
+
+</body>
+</html>
