@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Classes</h1>
+<p>Creating two movie objects from a movie class:</p>
+
+<p id="result"></p>
+
+<script>
+class Movie {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const movie1 = new Movie("John Wick", 2014);
+const movie2 = new Movie("Oppenheimer", 2023);
+
+document.getElementById("result").innerHTML = 
+"Movie 1: '" + movie1.name + "' Release year: " + movie1.year + "<br>" + 
+"Movie 2: '" + movie2.name + "' Release year: " + movie2.year;
+</script>
+
+</body>
+</html>
